@@ -1,0 +1,223 @@
+.header-top {
+    padding: 2rem 0 0 0;
+   
+}
+.header-top__center,
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top__left {
+    margin-left: 2rem;
+}
+.header-top__left-payment,
+.header-top__left-delivery {
+    position: relative;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0837c3;
+    transition: all .4s ease-in;
+}
+.header-top__left-payment::before,
+.header-top__left-delivery::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    left: -4rem;
+    top: -5px;
+}
+.header-top__left-payment::before{
+    background: url('../images/icon/payment.svg') no-repeat;
+}
+.header-top__left-delivery::before{
+    background: url('../images/icon/shipping.svg') no-repeat;
+   
+}
+.header-top__left-delivery {
+    margin-left: 7rem;
+}
+.header-top__center {
+    gap: 40px;
+}
+.header-top__box-phone {
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0837c3;
+    transition: all .4s ease-in;
+}
+.header-top__box-phone::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: -22px;
+    top: 3px;
+    background: url('../images/icon/location.svg') no-repeat;
+}
+.header-top__box-text {
+    display: block;
+    font-size: 12px;
+}
+.header-top__right-email {
+    position: relative;
+    font-weight: 600;
+    color: #0837c3;
+    transition: all .4s ease-in;
+}
+.header-top__right-email:hover,
+.header-top__box-phone:hover,
+.header-top__left-payment:hover,
+.header-top__left-delivery:hover{
+    transition: all .4s ease-in;
+    color: #f2690e;
+}
+.header-top__right-email::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: -25px;
+    top: 3px;
+    background: url('../images/icon/mail.svg') no-repeat;
+}
+.header-center {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 250px;
+    object-fit: cover;
+}
+.header-center__search {
+    width: 100%;
+    
+}
+.header-center__search-input {
+    width: 100%;
+    height: 40px;
+}
+.header-center__promotion {
+    width: 150px;
+    height: 40px;
+    background-color: #0837c3;
+    color: #fff;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .4s ease-in;
+    border-radius: 5px;
+}
+.header-center__promotion:hover{
+    background-color: #f2690e;
+    transition: all .4s ease-in;
+}
+.header-center__basket {
+    position: relative;
+    width: 40px;
+}
+.header-center__basket span{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    top: -6px;
+    right: -6px;
+    border-radius: 50%;
+    background-color: #0837c3;
+    color: #fff;
+    font-size: 12px;
+}
+.nav {
+    position: relative;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0837c3;  
+}
+.nav__catalog {
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.menu li a{
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .4s ease-in;
+}
+.menu li a:hover,
+.nav__price:hover{
+    color: #f2690e;
+    transition: all .4s ease-in;
+}
+.nav__price {
+    color: #fff;
+    font-weight: 600;
+    transition: all .4s ease-in;
+}
+.menu-visible {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 350px;
+    box-shadow: 0 10px 22.56px 1.44px rgba(28, 28, 28, .54);
+}
+ul.menu-visible{
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.menu-visible li{
+    padding: 10px 10px 10px 10px;
+}
+.menu-visible > li > a{
+    padding-left: 10px;
+    display: block;
+    font-weight: 600;
+    transition: all .4s ease-in;
+}
+.menu-visible > li > a:hover,
+.sub-menu li a:hover{
+    color: #0837c3;
+    transition: all .4s ease-in;
+}
+.sub-menu li a{
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    width: 870px;
+    left: 350px;
+    top: 0;
+    min-height: 400px;
+    background-color: #fff; 
+    box-shadow: 3px -1px 12.09px .91px rgba(28, 28, 28, .47);
+    display: none;
+    z-index: 2;
+}
+ul.sub-menu{
+    padding: 10px 20px;
+}
+.menu-visible li:hover .sub-menu{
+    display: block;
+}
+.sub-menu li{
+    padding-left: 10px;
+}
+
