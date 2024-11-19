@@ -1,0 +1,18 @@
+.sertificate {
+    padding: 4rem 0 7rem 0;
+}
+.sertificate__title {
+    margin-bottom: 4rem;
+}
+.sertificate-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sertificate-block__item {
+    margin-bottom: 4rem;
+    width: calc(100% / 4 - 10px);
+}
+.sertificate-block__img {
+    object-fit: cover;
+}

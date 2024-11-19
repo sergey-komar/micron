@@ -151,6 +151,8 @@
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease-in;
 }
 .menu {
     display: flex;
@@ -163,11 +165,13 @@
     transition: all .4s ease-in;
 }
 .menu li a:hover,
-.nav__price:hover{
+.nav__price:hover,
+.nav__catalog:hover{
     color: #f2690e;
     transition: all .4s ease-in;
 }
 .nav__price {
+    padding-right: 10px;
     color: #fff;
     font-weight: 600;
     transition: all .4s ease-in;
@@ -177,8 +181,11 @@
     left: 0;
     top: 65px;
     width: 350px;
+    background-color: #fff;
     box-shadow: 0 10px 22.56px 1.44px rgba(28, 28, 28, .54);
+    z-index: 3;
 }
+
 ul.menu-visible{
     padding-bottom: 20px;
     padding-top: 15px;
@@ -219,5 +226,14 @@ ul.sub-menu{
 }
 .sub-menu li{
     padding-left: 10px;
+}
+.menu-visible{
+    display: none;
+}
+.open{
+    display: block;
+}
+.menu-home.menu-visible{
+    display: block;
 }
 

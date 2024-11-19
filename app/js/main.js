@@ -5,6 +5,31 @@ $(function () {
         arrows: false,
         dots: true,
       });
+
+
+      //qty-btn
+  $(".qty-btn").on("click", function (e) {
+    e.preventDefault();
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+    if ($button.hasClass("inc")) {
+      var newVal = parseFloat(oldValue) + 1;
+    } else {
+      // Don't allow decrementing below zero
+      if (oldValue > 0) {
+        var newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 0;
+      }
+    }
+    $button.parent().find("input").val(newVal);
+  });
+
+  if(Fancybox){
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+  }
 })
 
 
@@ -93,10 +118,15 @@ function calcScroll(){
     
     return scrollWidth;
     }
-
-   
     //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
   
+    const btnCatalog = document.querySelector('.nav__catalog');
+    const menuVisible = document.querySelector('.menu-visible');
+
+    btnCatalog.addEventListener('click', () => {
+        menuVisible.classList.toggle('open');
+    })
+
 
 
 })
