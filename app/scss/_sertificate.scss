@@ -3,6 +3,7 @@
 }
 .sertificate__title {
     margin-bottom: 4rem;
+    text-align: center;
 }
 .sertificate-block {
     display: flex;
@@ -15,4 +16,5 @@
 }
 .sertificate-block__img {
     object-fit: cover;
+    margin: 0 auto;
 }

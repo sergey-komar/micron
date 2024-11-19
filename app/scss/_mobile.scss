@@ -1,0 +1,301 @@
+@media(max-width:900px){
+    .header-top__center .header-top__box:first-child{
+        display: none;
+    }
+    .slider-box{
+        width: 100%;
+    }
+    .category,
+    .advantages,
+    .production,
+    .partners,
+    .contacts,
+    .delivery,
+    .exhange{
+        padding: 5rem 0;
+    }
+    .category-block__item,
+    .partners-box__item{
+        width: calc(100% / 3 - 10px);
+    }
+    .partners-box__item{
+        margin-bottom: 30px;
+    }
+    .advantages-block{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .advantages-block__item{
+        width: 48%;
+    }
+    .production-block{
+        flex-direction: column;
+    }
+    .production-block__info,
+    .production-block__desc,
+    .production-block__inner{
+        width: 100%;
+    }
+    .footer-block,
+    .partners-box,
+    .contacts-block{
+        flex-wrap: wrap;
+    }
+    .partners-box{
+        justify-content: center;
+    }
+
+}
+
+
+
+
+@media(max-width: 720px){
+    .header-top__box,
+    .header-top__right{
+        display: none;
+    }
+    .partners-block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:650px){
+    .header-top{
+        margin-bottom: 15px;
+    }
+    .logo img{
+        width: 120px;
+    }
+    .header-center__search-input,
+    .header-center__promotion{
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    
+    .header-top__left-delivery {
+        margin-left: 4.5rem;
+    }
+    .header-top__left-payment, .header-top__left-delivery{
+        font-size: 16px;
+    }
+    .header-top__left-payment::before, .header-top__left-delivery::before{
+        left: -35px;
+    }
+    .header-top__right-email{
+        font-size: 14px;
+    }
+    .header-top__right-email::before{
+        left: -20px;
+    }
+    .slider-box__wrapper{
+        min-height: 100%;
+        padding-bottom: 20px;
+    }
+    .slider-box__item-title{
+        margin-top: 20px;
+        padding-left: 20px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .slider-box__item-text{
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .slider-box__item-btn{
+        margin-left: 20px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .slick-dots{
+        margin-top: 5px;
+    }
+    .slick-dots li button{
+        width: 10px;
+        height: 10px;
+    }
+    .category-block__item,
+    .team-block__item,
+    .partners-box__item,
+    .delivery-block__item{
+        width: calc(100% / 2 - 10px);
+    }
+    .sertificate-block__item{
+        width: calc(100% / 3 - 10px);
+    }
+    .partners-block__item{
+        margin-bottom: 20px;
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+
+
+@media(max-width:550px){
+    .title{
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .slider{
+        padding-bottom: 0;
+    }
+    .category,
+    .advantages,
+    .production,
+    .verification,
+    .team,
+    .sertificate,
+    .partners,
+    .contacts,
+    .catalog,
+    .payment,
+    .delivery,
+    .legal,
+    .exhange{
+        padding: 3rem 0;
+    }
+    .category-block__item,
+    .team-block__item,
+    .sertificate-block__item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .category__btn,
+    .production-block__info-btn,
+    .verification__btn,
+    .footer-block__item-btn{
+        margin: 0;
+        width: 100%;
+    }
+    .advantages-block__item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .advantages-block__item-title{
+        margin-bottom: 0;
+        text-transform: none;
+    }
+    .advantages-block__item-img{
+        width: 50px;
+        margin-bottom: 5px;
+    }
+    .production-block__desc{
+        gap: 10px;
+    }
+    .production-block__desc-title,
+    .production-block__desc-img{
+        width: 100%;
+        height: 220px;
+    }
+    .production-block__desc-link{
+        width: 100%;
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background-color: #0837c3;
+        border-radius: 5px;
+    }
+    .production-block__desc-link::after{
+        display: none;
+    }
+    .production-block__desc-title span{
+        font-size: 40px;
+    }
+    .partners-box__item-title{
+        text-transform: none;
+    }
+    .partners-box__item-img{
+        width: 50px;
+    }
+    .partners-block__item-img{
+        width: 90px;
+    }
+    .partners__title{
+        text-align: left;
+    }
+    .partners-box{
+        padding: 0 0 3rem 0;
+    }
+    .partners__title{
+        text-align: center;
+    }
+    .partners-box__item,
+    .contacts-block__item,
+    .delivery-block__item{
+        width: 100%;
+    }
+    .partners-block__item{
+        width: calc(100% / 2 - 5px);
+    }
+    .contacts-block{
+        margin-bottom: 20px;
+    }
+    .contacts-map iframe{
+        height: 350px;
+    }
+    .catalog-block__item{
+        margin-bottom: 40px;
+    }
+    .catalog-block__item-img{
+        height: 80px;
+    }
+    .payment-box__subtitle{
+        font-size: 20px;
+    }
+    .payment-box__text span{
+        font-size: 16px;
+    }
+    .payment-box__text{
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .delivery-block__item{
+        margin-bottom: 40px;
+    }
+
+
+    .footer{
+        padding: 3rem 0;
+    }
+    .footer-block__item-title{
+        margin-bottom: 10px;
+    }
+    .footer-block__item{
+        width: 100%;
+    }
+    .footer-block__item-btn{
+        margin-bottom: 10px;
+    }
+    .modal-form{
+        padding: 30px 10px 20px 10px;
+        max-width: 100%;
+        width: 320px;
+    }
+    .modal-form__input{
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .modal__close{
+        right: 9px;
+        top: 0px;
+    }
+    .modal-form__textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .modal-form__btn,
+    .modal-form__textarea{
+        margin-bottom: 10px;
+    }
+}
