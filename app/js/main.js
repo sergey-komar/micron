@@ -25,12 +25,29 @@ $(function () {
     $button.parent().find("input").val(newVal);
   });
 
-  if(Fancybox){
-    Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-      });
-  }
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: false,
+    arrows: false,
+    });
+
+    $('.product-slide__big').slick({
+      asNavFor: '.product-slide__thumb',
+      draggable: false,
+      arrows: false,
+    });
+
+    if(Fancybox){
+      Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+        });
+    }
+  
 })
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -137,5 +154,17 @@ function calcScroll(){
     })
 
 
+    //кнопка подробнее 
+    const catalogBtn = document.querySelector('.catalog-hidden__btn');
+    const catalogHidden = document.querySelector('.catalog-hidden__box');
+
+    if(catalogBtn){
+      catalogBtn.addEventListener('click', () => {
+        catalogHidden.classList.toggle('catalog-show');
+      })
+    }
+   
 
 })
+
+

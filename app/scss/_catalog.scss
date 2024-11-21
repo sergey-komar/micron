@@ -4,6 +4,9 @@
 .catalog__title {
     margin-bottom: 20px;
 }
+.catalog-block{
+    margin-bottom: 20px;
+}
 .catalog-block__item {
     display: flex;
     justify-content: space-between;
@@ -41,9 +44,124 @@
     text-align: center;
     border: none;
     width: 40px;
+    background-color: transparent;
 }
 .catalog-block__item-cart {
     width: 100px;
     height: 30px;
     line-height: 30px;
+}
+
+
+
+.catalog__text {
+    margin-bottom: 10px;
+}
+.catalog-hidden {
+    margin-bottom: 40px;
+}
+.catalog-hidden__btn {
+    width: 200px;
+    cursor: pointer;
+}
+.catalog-hidden__box {
+    margin-top: 10px;
+    display: none;
+}
+.catalog-show{
+    display: block;
+}
+.catalog-hidden__box-title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.catalog-hidden__box-text {
+    margin-top: 5px;
+}
+.catalog-hidden__box-text a{
+    font-weight: 600;
+    color: #0837c3;
+}
+.catalog-hidden__box-text a:hover{
+    color: #f2690e;
+}
+.catalog-box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.catalog-box__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding: 10px;
+    width: calc(100% / 5 - 20px);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.catalog-box__item:hover{
+    border: 1px solid #3366ff;
+    scale: 1.1;
+}
+.catalog-box__item-title {
+    margin-top: auto;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+//variaties
+.varieties__title {
+    margin-bottom: 20px;
+}
+.varieties-block {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.varieties-block__content {
+    width: 60%;
+}
+.varieties-block__content-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.varieties-block__list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.varieties-block__list-item {
+    list-style: disc;
+    font-weight: 600;
+}
+.varieties-block__list-item span{
+    margin-right: 5px;
+    color: #0837c3;
+}
+.varieties-block__content-text {
+    margin-bottom: 10px;
+}
+.varieties-block__content-subtitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.varieties-block__img {
+    width: 40%;
+}
+.varieties-block__item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.varieties-block__item-title {
+    margin-bottom: 5px;
+    font-weight: 18px;
+    color: #0837c3;
+    font-weight: 600;
 }
