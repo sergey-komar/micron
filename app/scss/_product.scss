@@ -31,7 +31,7 @@
 .product__wrapper{
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 35px;
     width: 60%;
 }
 .product-one__wrapper {
@@ -129,6 +129,7 @@
 }
 .product-block__link,
 .product-block__file {
+    width: 250px;
     display: block;
     font-weight: 600;
     transition: all .4s ease-in;

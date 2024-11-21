@@ -163,6 +163,14 @@ function calcScroll(){
         catalogHidden.classList.toggle('catalog-show');
       })
     }
+
+    // фильтры кнопка
+    const filterBtn = document.querySelector('.filter__title');
+    const searchWrapper = document.querySelector('.search__wrapper');
+
+      filterBtn.addEventListener('click', () => {
+        searchWrapper.classList.toggle('search-show');
+      })
    
 
 })

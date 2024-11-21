@@ -399,4 +399,20 @@
     .vacancies-block{
         margin-bottom: 20px;
     }
+    .catalog-box{
+        margin-bottom: 20px;
+    }
+    .filter__title{
+        display: inline-block;
+    }
+    .search__wrapper{
+        display: none;
+    }
+    .search-show{
+        display: flex;
+    }
+    .filter-box__btn,
+    .filter-hidden li a{
+        font-size: 14px;
+    }
 }

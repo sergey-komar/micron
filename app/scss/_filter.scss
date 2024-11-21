@@ -1,0 +1,107 @@
+.varieties--filter .varieties-block__list-item{
+    margin-bottom: 10px;
+}
+.search__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter-box__btn {
+    position: relative;
+    padding: 5px 15px 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    z-index: 9;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+.filter-box__btn::after{
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #171717;
+    transition: all .5s ease;
+}
+
+.filter-box__btn:hover{
+    background-color: #0837c3;
+    color: #fff;
+}
+.filter-box__btn:hover.filter-box__btn::after{
+    border-top: 6px solid #fff;
+    transition: all .5s ease;
+}
+.filter-box {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.filter-hidden {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    display: none;
+    left: auto;
+    right: 0;
+    z-index: 10;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+ul.filter-hidden{
+    padding: 10px;
+}
+.filter-hidden li{
+    margin-bottom: 10px;
+}
+.filter__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.filter__input {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+.filter__checkbox {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #464753;
+}
+.filter__input:checked + .filter__checkbox{
+    background-color: #0837c3;
+    background-image: url('../images/icon/custom-arrows.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.filter__text{
+    margin-left: 5px;
+}
+.filter-box:hover .filter-hidden{
+    display: block;
+}
+.filter__title{
+    display: none;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+    color: #0837c3;
+}
+.filter__title::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 25px;
+    right: -30px;
+    top: 3px;
+    background: url('../images/icon/filters-icon.svg') no-repeat;
+}
