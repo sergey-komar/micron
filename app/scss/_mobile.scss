@@ -168,6 +168,21 @@
     .product__wrapper{
         flex-direction: column;
     }
+    .error {
+        flex-direction: column;
+    }
+
+    .error__content-num {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .error__content-text,
+    .error__content-link {
+        display: block;
+        text-align: center;
+    }
+
 }
 
 
@@ -414,5 +429,13 @@
     .filter-box__btn,
     .filter-hidden li a{
         font-size: 14px;
+    }
+    .error {
+        padding: 2rem;
+    }
+
+    .error__content-num {
+        margin-bottom: 4rem;
+        font-size: 70px;
     }
 }
